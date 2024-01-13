@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Header = styled.div`
   display: flex;
   flex-direction: row;
-  height: 6rem;
   background: #160840;
   align-items: center;
   justify-content: space-between;
@@ -38,9 +37,9 @@ export const ChatContactsContainer = styled.div`
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    height: 6rem;
     background: #160840;
     align-items: center;
+    justify-content: flex-start;
     padding: 2rem;
     img {
       height: 4rem;
@@ -77,7 +76,8 @@ export const ChatContactsContainer = styled.div`
       padding: 2rem;
       border-bottom: 0.3rem solid #160840;
       &:hover {
-        background: #120630;
+        background: #12063055;
+        outline: 1px solid #321680;
       }
       img {
         height: 3rem;
@@ -86,6 +86,9 @@ export const ChatContactsContainer = styled.div`
       h3 {
         color: white;
       }
+    }
+    .selected {
+      background: #120630 !important;
     }
   }
 `;
